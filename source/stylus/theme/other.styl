@@ -1,3 +1,31 @@
+button#top
+  position fixed
+  bottom 1em
+  right -15%
+  color white
+  background-color black
+  border 0
+  padding 0.5em 0.75em
+  box-sizing border-box
+  transition all 0.5s
+  z-index 9999
+  cursor pointer
+
+  &.is-visible
+    right 1em
+
+  &.fade-out
+    opacity 1
+
+  &:hover
+    opacity 1
+
+  span
+    font-size 1.5em
+
+    &:before
+      vertical-align top
+
 a.logo
   color black
   background-color white
