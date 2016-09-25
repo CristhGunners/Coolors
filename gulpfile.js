@@ -12,6 +12,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 var imagemin = require('gulp-imagemin');
+var newer = require('gulp-newer');
 
 // Paths
 var paths = {
@@ -22,14 +23,14 @@ var paths = {
   stylusComponents: './source/stylus/**/*.styl',
   jsEntry: './source/scripts/app.js',
   jsFiles: './source/scripts/**/*.js',
-  imagesSource: './source/images/*',
-  fontsSource: './source/fonts/*',
-  iconsSource: './source/icons/**',
-  dataSource: './source/data/*',
-  data: './site/data',
-  fonts: './site/fonts',
-  icons: './site/icons',
-  images: './site/images',
+  imagesSource: 'source/images/**',
+  fontsSource: 'source/fonts/**',
+  iconsSource: 'source/icons/**',
+  dataSource: 'source/data/**',
+  data: 'site/data',
+  fonts: 'site/fonts',
+  icons: 'site/icons',
+  images: 'site/images',
   css: './site/css',
   js: './site/js',
   html: './site'
@@ -70,6 +71,7 @@ gulp.task('scripts', function() {
 // Minify Images
 gulp.task('minimages', function(){
   gulp.src(paths.imagesSource)
+  .pipe(newer(paths.images))
   .pipe(imagemin())
   .pipe(gulp.dest(paths.images));
 });
@@ -96,6 +98,6 @@ gulp.task('serve', ['jade2html', 'stylus2css', 'scripts', 'minimages', 'movefold
   gulp.watch([paths.jadeEntry,paths.jadePages, paths.jadeComponents], ['jade2html'], reload);
   gulp.watch([paths.stylusEntry,paths.stylusComponents], ['stylus2css'], reload);
   gulp.watch([paths.jsEntry,paths.jsFiles], ['scripts'], reload);
-  gulp.watch([paths.imagesSource], ['minimages'], reload);
-  // gulp.watch([paths.fontsSource, paths.iconsSource, paths.dataSource], ['movefolders'], reload);
+  gulp.watch(paths.imagesSource, ['minimages']);
+  gulp.watch([paths.fontsSource, paths.iconsSource, paths.dataSource], ['movefolders']);
 });

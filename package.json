@@ -10,6 +10,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.0.3",
     "gulp-jade": "^1.1.0",
+    "gulp-newer": "^1.2.0",
     "gulp-notify": "^2.2.0",
     "gulp-stylus": "^2.1.0",
     "gulp-uglify": "^2.0.0",
