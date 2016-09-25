@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(name='description', content='Beautiful Color Palettes')
+        meta(name="author", content="Cristhofer Andana Alcaino")
+        meta(name="keywords", content="Colors, Cool, Coolors, Design, Designer, Webdesign, UI, UX")
+        meta(name="theme-color" content="#FFFFFF")
+        meta(name='apple-mobile-web-app-capable', content='yes')
+        meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+        title Coolors -  
+            block title
+        link(rel="icon" type="image/png" href="images/icon.png")
+        link(rel='stylesheet', href='css/style.css')
+        link(rel="stylesheet", href="icons/style.css")
+    body
+        include header.jade
+        section.content
+            .content__wrapper
+                block content
+        include footer.jade
+        include popup.jade
+        script(src='http://code.jquery.com/jquery-latest.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js' async)
+        script(src='js/app.js')
+        block js

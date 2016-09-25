@@ -1,0 +1,56 @@
+section.content
+  width 100%
+
+  .content__wrapper
+    max-width web
+    width 100%
+    margin 1em auto
+    display block
+
+    section.list-palettes
+      width 100%
+      display flex
+      align-items center
+      justify-content space-around
+      flex-flow row wrap
+
+      .palette
+        width 250px
+        box-shadow 1px 1px 7.5px 2px rgba(black,0.15)
+        display flex
+        margin 1em
+        align-items center
+        justify-content center
+        flex-flow column
+        padding 0 1em
+        box-sizing border-box
+        background-color white
+
+        .palette__color
+          width 100%
+          display flex
+          align-items center
+          justify-content space-between
+          flex-flow row wrap
+          margin 0.5em auto
+
+          .palette__color__circle
+            width 50px
+            height 50px
+            border-radius 50%
+            background-color white
+            box-shadow 1px 1px 3px 1px rgba(black,0.15)
+            cursor pointer
+            transition all 0.5s
+
+            &:hover
+              box-shadow 0 0 0 0 rgba(black,0)
+
+
+          .palette__color__code
+            color black
+            opacity 0.5
+            text-align right
+            font-size 1.5em
+            font-weight 500
+            text-transform uppercase
