@@ -15,6 +15,17 @@ Beautiful Color Palette.
 
 [Go Coolors](http://cristhgunners.github.io/Coolors/)
 
+**Get Started**
+
+- `git clone git@github.com:CristhGunners/Coolors.git coolors`
+- `cd coolors`
+- `npm install`
+
+**Running in development**
+
+- `gulp serve`
+- Open [http://localhost:3000/](http://localhost:3000/)
+
 **Follow Me**
 
  - [Dribbble](https://dribbble.com/CristhGunners)
