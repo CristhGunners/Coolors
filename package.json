@@ -3,6 +3,19 @@
   "version": "1.0.0",
   "description": "Beautiful Color Palettes",
   "main": "site/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CristhGunners/Coolors"
+  },
+  "bugs": {
+    "url": "https://github.com/CristhGunners/Coolors/issues"
+  },
+  "keywords": [
+    "colors",
+    "design",
+    "webapp",
+    "ui"
+  ],
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.9.10",
@@ -16,7 +29,6 @@
     "gulp-uglify": "^2.0.0",
     "nib": "^1.1.0"
   },
-  "scripts": {},
-  "author": "Cristhofer Andana Alcaino",
-  "license": "ISC"
+  "author": "Cristhofer Andana Alcaino <cristhdeveloper@gmail.com>",
+  "license": "MIT"
 }
