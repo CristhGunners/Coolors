@@ -29,9 +29,6 @@ Beautiful Color Palette.
 **Follow Me**
 
  - [Dribbble](https://dribbble.com/CristhGunners)
- - [Twitter](https://twitter.com/CristhGunners)
- - [Instagram](https://instagram.com/cristhgunners/)
- - [Behance](https://www.behance.net/cristhgunners)
- - [Medium](https://medium.com/@cristhgunners)
  - [Github](https://github.com/CristhGunners)
+ - [Behance](https://www.behance.net/cristhgunners)
  - [Website](http://cristhgunners.github.io/)
