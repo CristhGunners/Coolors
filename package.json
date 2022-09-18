@@ -1,5 +1,5 @@
 {
-  "name": "Coolors",
+  "name": "coolors",
   "version": "1.0.0",
   "description": "Beautiful Color Palettes",
   "main": "site/index.html",
@@ -29,6 +29,6 @@
     "gulp-uglify": "^2.0.0",
     "nib": "^1.1.0"
   },
-  "author": "Cristhofer Andana Alcaino <cristhdeveloper@gmail.com>",
+  "author": "Cristhofer Andana Alcaino",
   "license": "MIT"
 }
