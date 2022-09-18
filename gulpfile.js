@@ -132,4 +132,12 @@ gulp.task(
   }
 );
 
+gulp.task('build', [
+  'jade2html',
+  'stylus2css',
+  'scripts',
+  'minimages',
+  'movefolders',
+]);
+
 gulp.task('default', ['serve']);
