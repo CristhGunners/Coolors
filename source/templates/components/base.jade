@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
     head
         meta(charset='UTF-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
         meta(name='description', content='Beautiful Color Palettes')
         meta(name="author", content="Cristhofer Andana Alcaino")
         meta(name="keywords", content="Colors, Cool, Coolors, Design, Designer, Webdesign, UI, UX")
@@ -24,7 +24,7 @@ html(lang="en")
         section.content
             .content__wrapper
                 block content
-        button#top: span.icons-caret-up
+        button#top(aria-label="Scroll to top", title="Scroll to top"): span.icons-caret-up
         include footer.jade
         include popup.jade
         script(src='https://code.jquery.com/jquery-latest.min.js')
