@@ -16,6 +16,10 @@
     "webapp",
     "ui"
   ],
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build"
+  },
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.9.10",

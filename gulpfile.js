@@ -26,10 +26,12 @@ var paths = {
   imagesSource: 'source/images/**',
   fontsSource: 'source/fonts/**',
   iconsSource: 'source/icons/**',
+  faviconsSource: './source/favicons/*',
   dataSource: 'source/data/**',
   data: 'site/data',
   fonts: 'site/fonts',
   icons: 'site/icons',
+  favicons: './site/favicons',
   images: 'site/images',
   css: './site/css',
   js: './site/js',
@@ -89,6 +91,7 @@ gulp.task('movefolders', [], function () {
   gulp.src(paths.fontsSource).pipe(gulp.dest(paths.fonts));
   gulp.src(paths.iconsSource).pipe(gulp.dest(paths.icons));
   gulp.src(paths.dataSource).pipe(gulp.dest(paths.data));
+  gulp.src(paths.faviconsSource).pipe(gulp.dest(paths.favicons));
 });
 
 // Broser Sync
@@ -126,7 +129,12 @@ gulp.task(
     gulp.watch([paths.jsEntry, paths.jsFiles], ['scripts'], reload);
     gulp.watch(paths.imagesSource, ['minimages']);
     gulp.watch(
-      [paths.fontsSource, paths.iconsSource, paths.dataSource],
+      [
+        paths.fontsSource,
+        paths.iconsSource,
+        paths.dataSource,
+        paths.faviconsSource,
+      ],
       ['movefolders']
     );
   }
